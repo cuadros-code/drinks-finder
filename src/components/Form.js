@@ -7,7 +7,7 @@ export const Form = () => {
 
     const { categories } = useContext(CategoriesContext);
 
-    const { setValueForm } = useContext(RecipesContext);
+    const { setValueForm , setSaveResultRecipes} = useContext(RecipesContext);
 
 
     const [error, setError] = useState(false);
@@ -34,6 +34,10 @@ export const Form = () => {
         if (name.trim().length < 1 || category.trim().length < 1) return setError(true);
 
         setValueForm(formValues);
+        setSaveResultRecipes( p  => ({
+            ...p,
+            isAvailable:true
+        }) )
         setError(false);
     }
 
