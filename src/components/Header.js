@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Header = () => {
     return (
-        <header className="bg-alert">
+        <header className="header-content">
             <h1>Favorite Drink</h1>
         </header>
     )

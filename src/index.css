@@ -1,6 +1,7 @@
 html {
   height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -8,14 +9,59 @@ body {
   background-color: #e5e5e5;
   min-height: 100%;
 }
+
 header {
-  background-color: #ec3a49;
+  background-color: #5DB0AB;
   color: white;
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
+
 h1 {
   color: white;
   font-weight: 900;
   text-align: center;
   font-size: 3rem;
+}
+
+.alert-error {
+  width: 100vw;
+  background-color: #da4d51;
+  padding: 0.6rem 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.btn-search {
+  background: #5DB0AB ;
+  color: white ;
+  height: 40px;
+  width: 100% ;
+  border-radius: 20px;
+  border: none;
+
+  transition: background-color .3s ease-in-out ;
+}
+
+.btn-search:hover{
+  background-color: #9bd1cd ;
+}
+
+.btn-search:focus{
+  outline: none;
+  border: none;
+}
+
+@media ( max-width: 767px ){
+  .btn-search {
+    background: #5DB0AB ;
+    color: white ;
+    height: 40px;
+    width: 100% ;
+    border-radius: 20px;
+    border: none;
+  
+    transition: background-color .3s ease-in-out ;
+  }
 }

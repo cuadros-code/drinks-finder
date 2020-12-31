@@ -1,11 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Form } from "./components/Form";
+import { Header } from "./components/Header";
+import CategoriesProvider from "./context/CategoryContext";
+import RecipesProvider from "./context/RecipesContext";
 
 function App() {
   return (
-    <div>
-      sa
-    </div>
+    <CategoriesProvider>
+      <RecipesProvider>
+
+        <Header />
+        <div className="container mt-5">
+          <div className="row">
+            < Form />
+          </div>
+        </div>
+        
+      </RecipesProvider>
+    </CategoriesProvider>
   );
 }
 
